@@ -27,7 +27,7 @@ jobs:
           username: deployer
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            rm -f /home/deployer/authserver.jar
+            rm -f /home/deployer/servicereg.jar
 
       - name: Copy JAR to server
         uses: appleboy/scp-action@v0.1.7
